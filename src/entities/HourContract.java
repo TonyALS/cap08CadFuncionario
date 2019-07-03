@@ -4,9 +4,17 @@ import java.util.Date;
 
 public class HourContract {
 	
+	/*	
+	 * Essa classe possui os atributos necessários para termos valor de um contrato.
+	 * Todos os atributos foram criados utilizando wrapper class para que possamos tratar os 
+	 * tipos primitivos como classes e utilizar os recursos de OO.
+	 */
+	
 	private Date date;
 	private Double valuePerHour;
 	private Integer hours;
+	
+	
 	
 	//Contructors
 	public HourContract() {
@@ -43,7 +51,7 @@ public class HourContract {
 		this.hours = hours;
 	}
 	
-	//Método
+	//Método que calcula o valor total do contrato:
 	public double totalValue() {
 		return valuePerHour * hours;
 	}
